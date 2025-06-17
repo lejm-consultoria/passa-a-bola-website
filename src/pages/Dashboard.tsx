@@ -12,19 +12,22 @@ const Dashboard: React.FC = () => {
       id: 1,
       title: "Brazil Women's Team Advances to Final",
       byline: "Maria Santos • 2 hours ago",
-      image: "/placeholder.svg",
+      image:
+        "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=300&fit=crop&crop=center",
     },
     {
       id: 2,
       title: "Rising Star: Ana Silva's Journey",
       byline: "Carlos Mendes • 5 hours ago",
-      image: "/placeholder.svg",
+      image:
+        "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=300&fit=crop&crop=center",
     },
     {
       id: 3,
       title: "Championship Preview: What to Expect",
       byline: "Lucia Oliveira • 1 day ago",
-      image: "/placeholder.svg",
+      image:
+        "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400&h=300&fit=crop&crop=center",
     },
   ];
 
@@ -35,8 +38,8 @@ const Dashboard: React.FC = () => {
       awayTeam: "Palmeiras Women",
       date: "Dec 28, 2024",
       time: "19:00",
-      homeLogo: "/placeholder.svg",
-      awayLogo: "/placeholder.svg",
+      homeLogo: "https://img.icons8.com/color/48/football.png",
+      awayLogo: "https://img.icons8.com/color/48/soccer-ball.png",
     },
     {
       id: 2,
@@ -44,8 +47,8 @@ const Dashboard: React.FC = () => {
       awayTeam: "São Paulo Women",
       date: "Dec 30, 2024",
       time: "16:00",
-      homeLogo: "/placeholder.svg",
-      awayLogo: "/placeholder.svg",
+      homeLogo: "https://img.icons8.com/color/48/soccer-ball.png",
+      awayLogo: "https://img.icons8.com/color/48/football.png",
     },
     {
       id: 3,
@@ -53,17 +56,42 @@ const Dashboard: React.FC = () => {
       awayTeam: "Botafogo Women",
       date: "Jan 2, 2025",
       time: "20:00",
-      homeLogo: "/placeholder.svg",
-      awayLogo: "/placeholder.svg",
+      homeLogo: "https://img.icons8.com/color/48/football.png",
+      awayLogo: "https://img.icons8.com/color/48/soccer-ball.png",
     },
   ];
 
   const teamOfTheWeek = [
-    { name: "Ana Silva", position: "GK", image: "/placeholder.svg" },
-    { name: "Carla Santos", position: "DEF", image: "/placeholder.svg" },
-    { name: "Rita Lima", position: "MID", image: "/placeholder.svg" },
-    { name: "Sofia Costa", position: "MID", image: "/placeholder.svg" },
-    { name: "Lucia Mendes", position: "FWD", image: "/placeholder.svg" },
+    {
+      name: "Ana Silva",
+      position: "GK",
+      image:
+        "https://images.unsplash.com/photo-1494790108755-2616b332c87c?w=100&h=100&fit=crop&crop=face",
+    },
+    {
+      name: "Carla Santos",
+      position: "DEF",
+      image:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
+    },
+    {
+      name: "Rita Lima",
+      position: "MID",
+      image:
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face",
+    },
+    {
+      name: "Sofia Costa",
+      position: "MID",
+      image:
+        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face",
+    },
+    {
+      name: "Lucia Mendes",
+      position: "FWD",
+      image:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+    },
   ];
 
   return (
@@ -193,7 +221,7 @@ const Dashboard: React.FC = () => {
                 className="flex items-center gap-4 p-4 hover:bg-gray-50 rounded-lg transition-colors"
               >
                 <Avatar className="w-16 h-16">
-                  <AvatarImage src="/placeholder.svg" />
+                  <AvatarImage src="https://images.unsplash.com/photo-1494790108755-2616b332c87c?w=100&h=100&fit=crop&crop=face" />
                   <AvatarFallback>MS</AvatarFallback>
                 </Avatar>
                 <div className="flex-1">
@@ -302,7 +330,7 @@ const Dashboard: React.FC = () => {
             <CardContent>
               <div className="relative aspect-video bg-gradient-to-br from-brand-primary/10 to-brand-secondary/10 rounded-lg overflow-hidden cursor-pointer group">
                 <img
-                  src="/placeholder.svg"
+                  src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=200&fit=crop&crop=center"
                   alt="Match highlights"
                   className="w-full h-full object-cover"
                 />
