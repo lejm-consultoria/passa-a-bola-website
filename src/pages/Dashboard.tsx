@@ -162,11 +162,11 @@ const Dashboard: React.FC = () => {
                   </div>
 
                   <div className="flex items-center justify-center gap-4 mt-2">
-                    <div className="flex items-center gap-1 text-caption text-neutral-light">
+                    <div className="flex items-center gap-1 text-sm text-neutral-light">
                       <Calendar className="w-3 h-3" />
                       {match.date}
                     </div>
-                    <div className="flex items-center gap-1 text-caption text-neutral-light">
+                    <div className="flex items-center gap-1 text-sm text-neutral-light">
                       <Clock className="w-3 h-3" />
                       {match.time}
                     </div>
@@ -200,9 +200,7 @@ const Dashboard: React.FC = () => {
                   <h3 className="text-base font-semibold text-neutral-dark">
                     Maria Silva
                   </h3>
-                  <p className="text-caption text-neutral-light">
-                    Santos FC Women
-                  </p>
+                  <p className="text-sm text-neutral-light">Santos FC Women</p>
                   <Badge
                     variant="secondary"
                     className="mt-1 bg-brand-primary/10 text-brand-primary"
@@ -318,7 +316,7 @@ const Dashboard: React.FC = () => {
                   <h4 className="text-base font-semibold text-white mb-1">
                     Best Goals of the Week
                   </h4>
-                  <p className="text-caption text-white/80">3:45 minutes</p>
+                  <p className="text-sm text-white/80">3:45 minutes</p>
                 </div>
               </div>
             </CardContent>
