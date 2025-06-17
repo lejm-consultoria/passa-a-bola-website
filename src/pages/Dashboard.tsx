@@ -70,18 +70,20 @@ const Dashboard: React.FC = () => {
     <div className="container mx-auto px-4 py-6 space-y-8">
       {/* Header Section */}
       <div className="flex items-center justify-between">
-        <h1 className="text-h1">Dashboard</h1>
+        <h1 className="text-3xl font-bold text-brand-primary">Dashboard</h1>
       </div>
 
       {/* Featured Articles Carousel */}
       <section>
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-h2">Featured Stories</h2>
+          <h2 className="text-lg font-semibold text-neutral-dark">
+            Featured Stories
+          </h2>
           <Link
             to="/stories"
             className="flex items-center gap-1 text-brand-primary hover:text-brand-hover transition-colors"
           >
-            <span className="text-caption">View All</span>
+            <span className="text-sm">View All</span>
             <ChevronRight className="w-4 h-4" />
           </Link>
         </div>
@@ -101,12 +103,10 @@ const Dashboard: React.FC = () => {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300"></div>
               </div>
               <CardContent className="p-4">
-                <h3 className="text-body font-semibold text-neutral-dark mb-2 group-hover:text-brand-primary transition-colors">
+                <h3 className="text-base font-semibold text-neutral-dark mb-2 group-hover:text-brand-primary transition-colors">
                   {article.title}
                 </h3>
-                <p className="text-caption text-neutral-light">
-                  {article.byline}
-                </p>
+                <p className="text-sm text-neutral-light">{article.byline}</p>
               </CardContent>
             </Card>
           ))}
