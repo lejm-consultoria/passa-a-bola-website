@@ -92,26 +92,7 @@
     @apply bg-white text-neutral-dark text-base leading-normal;
   }
 
-  /* Typography Classes */
-  .text-h1 {
-    @apply text-h1 font-bold text-brand-primary;
-  }
-
-  .text-h2 {
-    @apply text-h2 font-semibold text-neutral-dark;
-  }
-
-  .text-body {
-    @apply text-body font-normal text-neutral-dark;
-  }
-
-  .text-caption {
-    @apply text-caption font-normal text-neutral-light;
-  }
-
-  .text-footer {
-    @apply text-footer font-normal text-neutral-footer;
-  }
+  /* Typography utility classes - use the fontSize definitions from tailwind.config.ts */
 }
 
 @layer components {
