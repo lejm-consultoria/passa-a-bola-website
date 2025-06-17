@@ -32,7 +32,7 @@ const Sidebar: React.FC = () => {
                   }`}
                 >
                   <Icon className="w-5 h-5" strokeWidth={2} />
-                  <span className="text-body font-medium">{item.label}</span>
+                  <span className="text-base font-medium">{item.label}</span>
                 </Link>
               </li>
             );

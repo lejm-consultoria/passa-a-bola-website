@@ -28,7 +28,7 @@ const TopBar: React.FC = () => {
               <span className="text-white font-bold text-sm">PB</span>
             </div>
             {!isMobile && (
-              <span className="text-h2 font-bold text-neutral-dark">
+              <span className="text-lg font-bold text-neutral-dark">
                 Passa a Bola
               </span>
             )}
@@ -71,7 +71,7 @@ const TopBar: React.FC = () => {
         <div className="flex items-center gap-3">
           {!isMobile && (
             <>
-              <div className="text-body text-neutral-dark">Hello, User!</div>
+              <div className="text-base text-neutral-dark">Hello, User!</div>
               <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
                 <Bell className="w-5 h-5 text-neutral-dark" />
               </button>
