@@ -91,7 +91,8 @@ const LiveStats: React.FC = () => {
       position: 1,
       name: "Mariana Souza",
       username: "@mariana_souza",
-      avatar: "/placeholder.svg",
+      avatar:
+        "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100&h=100&fit=crop&crop=face",
       goals: 14,
       assists: 6,
       level: 6,
@@ -100,7 +101,8 @@ const LiveStats: React.FC = () => {
       position: 2,
       name: "Ana Clara",
       username: "@anaclara10",
-      avatar: "/placeholder.svg",
+      avatar:
+        "https://images.unsplash.com/photo-1494790108755-2616b332c87c?w=100&h=100&fit=crop&crop=face",
       goals: 12,
       assists: 8,
       level: 5,
@@ -110,7 +112,8 @@ const LiveStats: React.FC = () => {
       position: 3,
       name: "Beatriz Lima",
       username: "@beatriz_lima",
-      avatar: "/placeholder.svg",
+      avatar:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
       goals: 11,
       assists: 7,
       level: 5,
@@ -119,7 +122,8 @@ const LiveStats: React.FC = () => {
       position: 4,
       name: "Sofia Costa",
       username: "@sofia_costa",
-      avatar: "/placeholder.svg",
+      avatar:
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face",
       goals: 10,
       assists: 9,
       level: 4,
@@ -128,7 +132,8 @@ const LiveStats: React.FC = () => {
       position: 5,
       name: "Júlia Santos",
       username: "@julia_santos",
-      avatar: "/placeholder.svg",
+      avatar:
+        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face",
       goals: 9,
       assists: 5,
       level: 4,
