@@ -58,9 +58,11 @@ const TopBar: React.FC = () => {
         )}
 
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-brand-primary rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-sm">PB</span>
-          </div>
+          <img
+            src="https://raw.githubusercontent.com/lejm-consultoria/passa-a-bola/refs/heads/main/Assets/new-logo-no-background.png"
+            alt="Passa a Bola Logo"
+            className="h-8 w-auto"
+          />
           {!isMobile && (
             <span className="text-lg font-bold text-neutral-dark">
               Passa a Bola
