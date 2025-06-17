@@ -138,19 +138,19 @@ const Dashboard: React.FC = () => {
                           <AvatarImage src={match.homeLogo} />
                           <AvatarFallback>H</AvatarFallback>
                         </Avatar>
-                        <span className="text-body font-medium text-neutral-dark truncate">
+                        <span className="text-base font-medium text-neutral-dark truncate">
                           {match.homeTeam}
                         </span>
                       </div>
 
                       <div className="text-center px-2">
-                        <span className="text-body font-bold text-neutral-dark">
+                        <span className="text-base font-bold text-neutral-dark">
                           vs
                         </span>
                       </div>
 
                       <div className="flex items-center gap-2 flex-1 justify-end">
-                        <span className="text-body font-medium text-neutral-dark truncate">
+                        <span className="text-base font-medium text-neutral-dark truncate">
                           {match.awayTeam}
                         </span>
                         <Avatar className="w-8 h-8">
@@ -197,7 +197,7 @@ const Dashboard: React.FC = () => {
                   <AvatarFallback>MS</AvatarFallback>
                 </Avatar>
                 <div className="flex-1">
-                  <h3 className="text-body font-semibold text-neutral-dark">
+                  <h3 className="text-base font-semibold text-neutral-dark">
                     Maria Silva
                   </h3>
                   <p className="text-caption text-neutral-light">
@@ -267,7 +267,7 @@ const Dashboard: React.FC = () => {
                     <Avatar className="w-8 h-8">
                       <AvatarFallback>SF</AvatarFallback>
                     </Avatar>
-                    <span className="text-body font-medium">Santos FC</span>
+                    <span className="text-base font-medium">Santos FC</span>
                   </div>
 
                   <div className="text-center">
@@ -277,7 +277,7 @@ const Dashboard: React.FC = () => {
                   </div>
 
                   <div className="flex items-center gap-2">
-                    <span className="text-body font-medium">Palmeiras</span>
+                    <span className="text-base font-medium">Palmeiras</span>
                     <Avatar className="w-8 h-8">
                       <AvatarFallback>PA</AvatarFallback>
                     </Avatar>
@@ -315,7 +315,7 @@ const Dashboard: React.FC = () => {
                   </div>
                 </div>
                 <div className="absolute bottom-4 left-4 right-4">
-                  <h4 className="text-body font-semibold text-white mb-1">
+                  <h4 className="text-base font-semibold text-white mb-1">
                     Best Goals of the Week
                   </h4>
                   <p className="text-caption text-white/80">3:45 minutes</p>
