@@ -4,8 +4,10 @@ const Community: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-6">
       <div className="text-center py-16">
-        <h1 className="text-h1 mb-4">Community Forum</h1>
-        <p className="text-body text-neutral-light">
+        <h1 className="text-3xl font-bold text-brand-primary mb-4">
+          Community Forum
+        </h1>
+        <p className="text-base text-neutral-light">
           Discussions, Q&A, and fan interactions coming soon...
         </p>
       </div>
