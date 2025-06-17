@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { useMobile } from "@/hooks/use-mobile";
+import { useIsMobile } from "@/hooks/use-mobile";
 import Sidebar from "./Sidebar";
 import BottomTabs from "./BottomTabs";
 import TopBar from "./TopBar";
@@ -10,7 +10,7 @@ interface NavigationProps {
 }
 
 const Navigation: React.FC<NavigationProps> = ({ children }) => {
-  const isMobile = useMobile();
+  const isMobile = useIsMobile();
   const location = useLocation();
 
   // Hide navigation on login page
