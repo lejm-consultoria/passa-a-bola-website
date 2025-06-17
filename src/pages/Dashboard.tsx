@@ -269,7 +269,7 @@ const Dashboard: React.FC = () => {
                   </div>
 
                   <div className="text-center">
-                    <div className="text-h2 font-bold text-brand-primary">
+                    <div className="text-lg font-bold text-brand-primary">
                       2 - 1
                     </div>
                   </div>

@@ -62,7 +62,7 @@ const TopBar: React.FC = () => {
             <span className="text-white font-bold text-sm">PB</span>
           </div>
           {!isMobile && (
-            <span className="text-h2 font-bold text-neutral-dark">
+            <span className="text-lg font-bold text-neutral-dark">
               Passa a Bola
             </span>
           )}
