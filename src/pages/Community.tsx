@@ -59,11 +59,13 @@ const Community: React.FC = () => {
       author: {
         name: "Ana Clara",
         username: "@anaclara10",
-        avatar: "/placeholder.svg",
+        avatar:
+          "https://images.unsplash.com/photo-1494790108755-2616b332c87c?w=100&h=100&fit=crop&crop=face",
       },
       content:
         "Orgulhosa da nossa vitória ontem! 💪⚽ Que jogo incrível das meninas!",
-      image: "/placeholder.svg",
+      image:
+        "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=500&h=400&fit=crop&crop=center",
       timestamp: "há 2 horas",
       likes: 23,
       liked: true,
@@ -74,7 +76,8 @@ const Community: React.FC = () => {
           author: {
             name: "Júlia Santos",
             username: "@julia_santos",
-            avatar: "/placeholder.svg",
+            avatar:
+              "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
           },
           content: "Arrebentaram! 🔥",
           timestamp: "há 1 hora",
@@ -84,7 +87,8 @@ const Community: React.FC = () => {
           author: {
             name: "Maria Silva",
             username: "@maria_silva",
-            avatar: "/placeholder.svg",
+            avatar:
+              "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face",
           },
           content: "Foi demais mesmo! Parabéns pelo gol!",
           timestamp: "há 30 min",
@@ -96,7 +100,8 @@ const Community: React.FC = () => {
       author: {
         name: "Carla Mendes",
         username: "@carla_mendes",
-        avatar: "/placeholder.svg",
+        avatar:
+          "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face",
       },
       content:
         "Treino pesado hoje! Quem mais está se preparando para a próxima temporada? 🏃‍♀️",
@@ -110,7 +115,8 @@ const Community: React.FC = () => {
           author: {
             name: "Beatriz Costa",
             username: "@beatriz_costa",
-            avatar: "/placeholder.svg",
+            avatar:
+              "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
           },
           content: "Eu! Treino todos os dias 💪",
           timestamp: "há 2 horas",
@@ -122,7 +128,8 @@ const Community: React.FC = () => {
       author: {
         name: "Sofia Lima",
         username: "@sofia_lima",
-        avatar: "/placeholder.svg",
+        avatar:
+          "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=100&h=100&fit=crop&crop=face",
       },
       content:
         "Inspiração do dia: 'O futebol feminino não é uma versão do masculino. É futebol!' 🌟",
@@ -154,19 +161,22 @@ const Community: React.FC = () => {
     {
       name: "Marta Vieira",
       username: "@marta10oficial",
-      avatar: "/placeholder.svg",
+      avatar:
+        "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100&h=100&fit=crop&crop=face",
       verified: true,
     },
     {
       name: "Cristiane Rozeira",
       username: "@cris_rozeira",
-      avatar: "/placeholder.svg",
+      avatar:
+        "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face",
       verified: false,
     },
     {
       name: "Bia Zaneratto",
       username: "@biazaneratto",
-      avatar: "/placeholder.svg",
+      avatar:
+        "https://images.unsplash.com/photo-1590736969955-71cc94901144?w=100&h=100&fit=crop&crop=face",
       verified: true,
     },
   ];
@@ -179,7 +189,8 @@ const Community: React.FC = () => {
       author: {
         name: "Você",
         username: "@voce",
-        avatar: "/placeholder.svg",
+        avatar:
+          "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&h=100&fit=crop&crop=face",
       },
       content: newPost,
       timestamp: "agora",
@@ -262,7 +273,7 @@ const Community: React.FC = () => {
             <CardContent className="p-6">
               <div className="flex gap-4">
                 <Avatar className="w-12 h-12">
-                  <AvatarImage src="/placeholder.svg" />
+                  <AvatarImage src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&h=100&fit=crop&crop=face" />
                   <AvatarFallback>V</AvatarFallback>
                 </Avatar>
                 <div className="flex-1 space-y-4">
@@ -437,7 +448,7 @@ const Community: React.FC = () => {
                       {/* New Comment Input */}
                       <div className="flex gap-3">
                         <Avatar className="w-8 h-8">
-                          <AvatarImage src="/placeholder.svg" />
+                          <AvatarImage src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&h=100&fit=crop&crop=face" />
                           <AvatarFallback>V</AvatarFallback>
                         </Avatar>
                         <div className="flex-1 flex gap-2">
