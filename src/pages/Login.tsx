@@ -40,8 +40,10 @@ const Login: React.FC = () => {
             <div className="order-2 md:order-1">
               {/* Hero Section */}
               <div className="mb-8 md:mb-12">
-                <h1 className="text-h1 mb-4">Welcome to Passa a Bola</h1>
-                <h2 className="text-h2 text-neutral-dark">
+                <h1 className="text-3xl font-bold text-brand-primary mb-4">
+                  Welcome to Passa a Bola
+                </h1>
+                <h2 className="text-lg font-semibold text-neutral-dark">
                   Your gateway to women's football.
                 </h2>
               </div>
@@ -60,7 +62,7 @@ const Login: React.FC = () => {
                 <div className="space-y-2">
                   <Label
                     htmlFor="email"
-                    className="text-body font-medium text-neutral-dark"
+                    className="text-base font-medium text-neutral-dark"
                   >
                     Email
                   </Label>
@@ -82,7 +84,7 @@ const Login: React.FC = () => {
                 <div className="space-y-2">
                   <Label
                     htmlFor="password"
-                    className="text-body font-medium text-neutral-dark"
+                    className="text-base font-medium text-neutral-dark"
                   >
                     Password
                   </Label>
@@ -112,13 +114,13 @@ const Login: React.FC = () => {
                 <div className="flex flex-col sm:flex-row sm:justify-between gap-4 text-center sm:text-left">
                   <Link
                     to="/forgot-password"
-                    className="text-caption text-neutral-light hover:text-neutral-dark transition-colors"
+                    className="text-sm text-neutral-light hover:text-neutral-dark transition-colors"
                   >
                     Forgot Password?
                   </Link>
                   <Link
                     to="/signup"
-                    className="text-caption text-brand-primary hover:text-brand-hover transition-colors font-medium"
+                    className="text-sm text-brand-primary hover:text-brand-hover transition-colors font-medium"
                   >
                     Sign Up
                   </Link>
@@ -157,7 +159,7 @@ const Login: React.FC = () => {
         {/* Footer */}
         <footer className="border-t border-gray-200 py-6">
           <div className="container mx-auto px-4 text-center">
-            <p className="text-footer text-neutral-footer">
+            <p className="text-xs text-neutral-footer">
               © 2025 Passa a Bola. All rights reserved.
             </p>
           </div>
