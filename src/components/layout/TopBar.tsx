@@ -87,7 +87,7 @@ const TopBar: React.FC = () => {
 
           <button onClick={() => navigate("/settings")}>
             <Avatar className="w-8 h-8">
-              <AvatarImage src="/placeholder.svg" />
+              <AvatarImage src="https://images.unsplash.com/photo-1494790108755-2616b332c87c?w=100&h=100&fit=crop&crop=face" />
               <AvatarFallback>
                 <User className="w-4 h-4" />
               </AvatarFallback>

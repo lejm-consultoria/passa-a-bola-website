@@ -132,7 +132,7 @@ const Login: React.FC = () => {
             <div className="order-1 md:order-2 hidden md:block">
               <div className="relative h-96 md:h-[500px] bg-gradient-to-br from-brand-primary/10 to-brand-secondary/10 rounded-2xl overflow-hidden">
                 {/* Background pattern */}
-                <div className="absolute inset-0 bg-[url('/placeholder.svg')] bg-center bg-no-repeat bg-contain opacity-20"></div>
+                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&h=600&fit=crop&crop=center')] bg-center bg-no-repeat bg-cover opacity-20"></div>
 
                 {/* Female player silhouette */}
                 <div className="absolute inset-0 flex items-center justify-center">

@@ -40,8 +40,10 @@ const Settings: React.FC = () => {
     bio: "Meio-campista. Apaixonada por futebol feminino. Feminista e sonhadora.",
     email: "ana@passabolagpt.com",
     location: "São Paulo, SP",
-    avatar: "/placeholder.svg",
-    coverImage: "/placeholder.svg",
+    avatar:
+      "https://images.unsplash.com/photo-1494790108755-2616b332c87c?w=200&h=200&fit=crop&crop=face",
+    coverImage:
+      "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1200&h=400&fit=crop&crop=center",
   });
 
   // User statistics
