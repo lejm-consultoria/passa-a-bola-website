@@ -26,7 +26,7 @@ export interface ArticleResponse {
 }
 
 // URL base da API - configurada via Vite
-const API_BASE_URL = (globalThis as any).__API_URL__ || 'http://localhost:3001';
+const API_BASE_URL = (globalThis as any).__API_URL__ || 'http://localhost:3000';
 
 export const useArticles = () => {
   const [articles, setArticles] = useState<Article[]>([]);
