@@ -41,10 +41,10 @@ const Login: React.FC = () => {
               {/* Hero Section */}
               <div className="mb-8 md:mb-12">
                 <h1 className="text-3xl font-bold text-brand-primary mb-4">
-                  Welcome to Passa a Bola
+                  Bem-vinda ao Passa a Bola
                 </h1>
                 <h2 className="text-lg font-semibold text-neutral-dark">
-                  Your gateway to women's football.
+                  Seu portal para o futebol feminino.
                 </h2>
               </div>
 

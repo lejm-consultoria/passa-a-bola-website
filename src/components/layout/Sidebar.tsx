@@ -3,11 +3,11 @@ import { Link, useLocation } from "react-router-dom";
 import { Home, BarChart3, Users, Trophy, User } from "lucide-react";
 
 const navigationItems = [
-  { path: "/", icon: Home, label: "Home" },
-  { path: "/stats", icon: BarChart3, label: "Statistics" },
-  { path: "/community", icon: Users, label: "Community" },
-  { path: "/fantasy", icon: Trophy, label: "Gamification" },
-  { path: "/settings", icon: User, label: "Profile" },
+  { path: "/", icon: Home, label: "Início" },
+  { path: "/stats", icon: BarChart3, label: "Estatísticas" },
+  { path: "/community", icon: Users, label: "Comunidade" },
+  { path: "/fantasy", icon: Trophy, label: "Gamificação" },
+  { path: "/settings", icon: User, label: "Perfil" },
 ];
 
 const Sidebar: React.FC = () => {

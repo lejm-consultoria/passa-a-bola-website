@@ -18,15 +18,15 @@ const NotFound = () => {
       <div className="max-w-md mx-auto text-center">
         <div className="text-6xl font-bold text-brand-primary/30 mb-4">404</div>
         <h1 className="text-3xl font-bold text-brand-primary mb-4">
-          Page not found
+          Página não encontrada
         </h1>
         <p className="text-base text-neutral-light mb-8">
-          Sorry, we couldn't find the page you're looking for.
+          Desculpe, não conseguimos encontrar a página que você está procurando.
         </p>
         <Link to="/">
           <Button className="btn-primary inline-flex items-center gap-2">
             <Home className="w-4 h-4" />
-            Go back home
+            Voltar ao início
           </Button>
         </Link>
       </div>

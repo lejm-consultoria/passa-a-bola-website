@@ -349,7 +349,7 @@ const Community: React.FC = () => {
                       <div className="rounded-lg overflow-hidden bg-gray-100">
                         <img
                           src={post.image}
-                          alt="Post image"
+                          alt="Imagem do post"
                           className="w-full h-64 object-cover"
                         />
                       </div>
