@@ -67,48 +67,20 @@ Acesse `http://localhost:3000` para verificar se tudo está funcionando.
 
 ##### Opção A: Usando GitHub Actions (Recomendado)
 
-1. Crie o arquivo `.github/workflows/deploy.yml`:
+1. O arquivo `.github/workflows/deploy.yml` já foi criado com a configuração correta.
 
-```yaml
-name: Deploy to GitHub Pages
+2. **IMPORTANTE:** No GitHub, vá em Settings > Pages:
+   - Em "Source", selecione "GitHub Actions"
+   - **NÃO** selecione "Deploy from a branch"
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-        cache: 'npm'
-        
-    - name: Install dependencies
-      run: npm ci
-      
-    - name: Build
-      run: npm run build
-      
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/main'
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
+3. Faça commit e push do código:
+```bash
+git add .
+git commit -m "Configurar deploy para GitHub Pages"
+git push origin main
 ```
 
-2. No GitHub, vá em Settings > Pages
-3. Selecione "GitHub Actions" como fonte
-4. Faça push do código e aguarde o deploy automático
+4. Aguarde o deploy automático. Você pode acompanhar o progresso em Actions > Deploy to GitHub Pages
 
 ##### Opção B: Deploy Manual
 
@@ -181,6 +153,14 @@ src/
 
 ### 🚨 Troubleshooting
 
+#### Problema: Site mostra HTML básico sem React (404 em /src/main.tsx)
+**Causa:** GitHub Pages está servindo o `index.html` da raiz em vez dos arquivos buildados.
+**Solução:** 
+1. Verifique se em Settings > Pages está selecionado "GitHub Actions" como fonte
+2. **NÃO** selecione "Deploy from a branch"
+3. Verifique se o workflow está rodando em Actions
+4. Aguarde o deploy completo (pode levar alguns minutos)
+
 #### Problema: Página em branco no GitHub Pages
 **Solução:** Verifique se o `base` no `vite.config.ts` está correto e corresponde ao nome do repositório.
 
@@ -189,6 +169,12 @@ src/
 
 #### Problema: Roteamento não funciona
 **Solução:** Configure o roteador para usar hash routing ou configure o servidor para servir `index.html` para todas as rotas.
+
+#### Problema: Workflow não executa
+**Solução:** 
+1. Verifique se o arquivo `.github/workflows/deploy.yml` existe
+2. Verifique se está na branch `main`
+3. Verifique se as permissões do repositório estão corretas
 
 ### 📝 Notas Importantes
 
