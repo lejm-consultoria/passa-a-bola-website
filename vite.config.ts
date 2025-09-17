@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/passa-a-bola-website/", // Configuração para GitHub Pages
+  base: "/", // Configuração para Coolify (sem subpath)
   server: {
     host: "::",
     port: 8080,
