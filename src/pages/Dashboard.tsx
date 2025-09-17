@@ -78,14 +78,14 @@ const Dashboard: React.FC = () => {
     <div className="container mx-auto px-4 py-6 space-y-8">
       {/* Header Section */}
       <div className="flex items-center justify-between">
-        <h1 className="text-3xl font-bold text-brand-primary">Dashboard</h1>
+        <h1 className="text-3xl font-bold text-brand-primary">Painel</h1>
       </div>
 
       {/* Featured Articles Carousel */}
       <section>
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-lg font-semibold text-neutral-dark">
-            Featured Stories
+            Histórias em Destaque
           </h2>
           <div className="flex items-center gap-4">
             <Button
@@ -101,7 +101,7 @@ const Dashboard: React.FC = () => {
               to="/stories"
               className="flex items-center gap-1 text-brand-primary hover:text-brand-hover transition-colors"
             >
-              <span className="text-sm">View All</span>
+              <span className="text-sm">Ver Todas</span>
               <ChevronRight className="w-4 h-4" />
             </Link>
           </div>
@@ -166,7 +166,7 @@ const Dashboard: React.FC = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Calendar className="w-5 h-5 text-brand-primary" />
-                Upcoming Matches
+                Próximos Jogos
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -190,7 +190,7 @@ const Dashboard: React.FC = () => {
 
                       <div className="text-center px-2">
                         <span className="text-base font-bold text-neutral-dark">
-                          vs
+                          x
                         </span>
                       </div>
 
@@ -229,7 +229,7 @@ const Dashboard: React.FC = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Goal className="w-5 h-5 text-brand-primary" />
-                Top Scorer
+                Artilheira
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -250,7 +250,7 @@ const Dashboard: React.FC = () => {
                     variant="secondary"
                     className="mt-1 bg-brand-primary/10 text-brand-primary"
                   >
-                    12 goals
+                    12 gols
                   </Badge>
                 </div>
                 <ChevronRight className="w-5 h-5 text-neutral-light" />
@@ -261,7 +261,7 @@ const Dashboard: React.FC = () => {
           {/* Team of the Week */}
           <Card>
             <CardHeader>
-              <CardTitle>Team of the Week</CardTitle>
+              <CardTitle>Time da Semana</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="flex items-center gap-2 overflow-x-auto pb-2">
@@ -297,7 +297,7 @@ const Dashboard: React.FC = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-                Live Match
+                Jogo ao Vivo
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -332,7 +332,7 @@ const Dashboard: React.FC = () => {
                     variant="outline"
                     className="border-brand-primary text-brand-primary"
                   >
-                    75' LIVE
+                    75' AO VIVO
                   </Badge>
                 </div>
               </Link>
@@ -342,7 +342,7 @@ const Dashboard: React.FC = () => {
           {/* Latest Highlights */}
           <Card>
             <CardHeader>
-              <CardTitle>Latest Highlights</CardTitle>
+              <CardTitle>Últimos Destaques</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="relative aspect-video bg-gradient-to-br from-brand-primary/10 to-brand-secondary/10 rounded-lg overflow-hidden cursor-pointer group">
@@ -359,9 +359,9 @@ const Dashboard: React.FC = () => {
                 </div>
                 <div className="absolute bottom-4 left-4 right-4">
                   <h4 className="text-base font-semibold text-white mb-1">
-                    Best Goals of the Week
+                    Melhores Gols da Semana
                   </h4>
-                  <p className="text-sm text-white/80">3:45 minutes</p>
+                  <p className="text-sm text-white/80">3:45 minutos</p>
                 </div>
               </div>
             </CardContent>

@@ -29,11 +29,11 @@ const Index = () => {
               strokeDashoffset="75"
             />
           </svg>
-          Generating your app...
+          Gerando sua aplicação...
         </h1>
         <p className="mt-4 text-slate-600 max-w-md">
-          Watch the chat on the left for updates that might need your attention
-          to finish generating
+          Acompanhe o chat à esquerda para atualizações que podem precisar de sua atenção
+          para finalizar a geração
         </p>
       </div>
     </div>
