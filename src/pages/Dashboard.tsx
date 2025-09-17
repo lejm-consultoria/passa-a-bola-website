@@ -1,35 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ChevronRight, Play, Calendar, Clock, Goal } from "lucide-react";
+import { ChevronRight, Play, Calendar, Clock, Goal, RefreshCw } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { useArticles } from "@/hooks/use-articles";
 
 const Dashboard: React.FC = () => {
-  // Mock data for the dashboard
-  const featuredArticles = [
-    {
-      id: 1,
-      title: "Brazil Women's Team Advances to Final",
-      byline: "Maria Santos • 2 hours ago",
-      image:
-        "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=300&fit=crop&crop=center",
-    },
-    {
-      id: 2,
-      title: "Rising Star: Ana Silva's Journey",
-      byline: "Carlos Mendes • 5 hours ago",
-      image:
-        "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=300&fit=crop&crop=center",
-    },
-    {
-      id: 3,
-      title: "Championship Preview: What to Expect",
-      byline: "Lucia Oliveira • 1 day ago",
-      image:
-        "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400&h=300&fit=crop&crop=center",
-    },
-  ];
+  // Hook para gerenciar as notícias da API
+  const { articles, loading, error, refetch } = useArticles();
 
   const upcomingMatches = [
     {
@@ -107,38 +87,75 @@ const Dashboard: React.FC = () => {
           <h2 className="text-lg font-semibold text-neutral-dark">
             Featured Stories
           </h2>
-          <Link
-            to="/stories"
-            className="flex items-center gap-1 text-brand-primary hover:text-brand-hover transition-colors"
-          >
-            <span className="text-sm">View All</span>
-            <ChevronRight className="w-4 h-4" />
-          </Link>
+          <div className="flex items-center gap-4">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={refetch}
+              disabled={loading}
+              className="text-brand-primary hover:text-brand-hover"
+            >
+              <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
+            </Button>
+            <Link
+              to="/stories"
+              className="flex items-center gap-1 text-brand-primary hover:text-brand-hover transition-colors"
+            >
+              <span className="text-sm">View All</span>
+              <ChevronRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {featuredArticles.map((article) => (
-            <Card
-              key={article.id}
-              className="group cursor-pointer hover:shadow-lg transition-shadow duration-300"
-            >
-              <div className="aspect-video bg-gradient-to-br from-brand-primary/10 to-brand-secondary/10 rounded-t-lg relative overflow-hidden">
-                <img
-                  src={article.image}
-                  alt={article.title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300"></div>
-              </div>
-              <CardContent className="p-4">
-                <h3 className="text-base font-semibold text-neutral-dark mb-2 group-hover:text-brand-primary transition-colors">
-                  {article.title}
-                </h3>
-                <p className="text-sm text-neutral-light">{article.byline}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+        {error && (
+          <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg">
+            <p className="text-sm text-red-600">
+              Erro ao carregar notícias: {error}. Usando dados de fallback.
+            </p>
+          </div>
+        )}
+
+        {loading ? (
+          <div className="grid md:grid-cols-3 gap-6">
+            {[1, 2, 3].map((i) => (
+              <Card key={i} className="animate-pulse">
+                <div className="aspect-video bg-gray-200 rounded-t-lg"></div>
+                <CardContent className="p-4">
+                  <div className="h-4 bg-gray-200 rounded mb-2"></div>
+                  <div className="h-3 bg-gray-200 rounded w-2/3"></div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        ) : (
+          <div className="grid md:grid-cols-3 gap-6">
+            {articles.map((article) => (
+              <Card
+                key={article.id}
+                className="group cursor-pointer hover:shadow-lg transition-shadow duration-300"
+              >
+                <div className="aspect-video bg-gradient-to-br from-brand-primary/10 to-brand-secondary/10 rounded-t-lg relative overflow-hidden">
+                  <img
+                    src={article.image}
+                    alt={article.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300"></div>
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="text-base font-semibold text-neutral-dark mb-2 group-hover:text-brand-primary transition-colors">
+                    {article.title}
+                  </h3>
+                  <p className="text-sm text-neutral-light">{article.byline}</p>
+                  <Badge variant="outline" className="mt-2 text-xs">
+                    {article.category}
+                  </Badge>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        )}
       </section>
 
       {/* Two Column Layout */}
