@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => ({
   define: {
     // Configuração da URL da API baseada no ambiente
     __API_URL__: mode === 'production' 
-      ? JSON.stringify('https://seu-backend.herokuapp.com') // Substitua pela URL do seu backend em produção
+      ? JSON.stringify('https://passabola.suricatox.com.br') // URL do backend em produção
       : JSON.stringify('http://localhost:3000')
   }
 }));
